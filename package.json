@@ -10,6 +10,9 @@
     "predeploy": "npm run build"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^7.0.1",
+    "@fortawesome/free-solid-svg-icons": "^7.0.1",
+    "@fortawesome/vue-fontawesome": "^3.1.2",
     "@tailwindcss/vite": "^4.1.13",
     "tailwindcss": "^4.1.13",
     "vue": "^3.5.18"
