@@ -65,8 +65,6 @@ const year = new Date().getFullYear();
 
 
 
-
-
       <!--https://cruip.com/create-an-infinite-horizontal-scroll-animation-with-tailwind-css/-->
 
       <!--<Separator color="#F4F0D7"/>-->
