@@ -13,7 +13,7 @@ const year = new Date().getFullYear();
 
 <template>
   <div class="text-lg">
-    <Header />
+    <Header></Header>
 
     <main class="text-center flex flex-col w-full">
       <Hero />  
@@ -60,8 +60,6 @@ const year = new Date().getFullYear();
             </a>
           </div>
     </section>
-
-
 
 
 

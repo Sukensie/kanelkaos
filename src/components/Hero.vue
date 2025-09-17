@@ -3,7 +3,7 @@
 </script>
 
 <template>
-    <div class="w-full px-4 py-2 bg-kk-beige">
-        <img class="w-full opacity-50" src="../assets/vue.svg">
+  <div class="relative w-full h-[40vh] max-h-[400px] overflow-hidden">
+    <img class="w-full h-full object-cover object-top  filter brightness-75" src="../assets/three-cannons.jpg" alt="Three Kanelkaos Cannons">
     </div>
 </template>
