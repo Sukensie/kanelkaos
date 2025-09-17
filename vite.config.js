@@ -9,6 +9,11 @@ export default defineConfig({
     vue(),
     tailwindcss()
   ],
+  base: '/',
+  build: {
+    outDir: 'dist',
+    assetsDir: 'assets'
+  },
   server: {
     proxy: {
       '/calendly': {
