@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+@theme {
+  --color-kk-beige: #F4F0D7;
+  --color-kk-red: #CE0A13;
+  --color-kk-green: #5D894C;
+  --color-kk-grey: #646464;
+}
+
+* {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
