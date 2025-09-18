@@ -33,7 +33,7 @@ const svgModules = import.meta.glob('../assets/*.svg', { eager: true, import: 'd
 // Helper to get the asset by filename (e.g., 'sdu-ss-logo.svg')
 const getAssetUrl = (filename) => {
 // Remove any leading path, just use the filename
-return svgModules[`/src/assets/${filename}`];
+return svgModules[`${filename}`];
 };
 
 // Props with defaults

@@ -1,6 +1,6 @@
 <template>
     <ScatteredBackground 
-            image-path="star.svg"
+            image-path="../assets/star.svg"
             :count="20"
             opacity="opacity-20"
             container-class="py-20 bg-kk-green overflow-hidden"
@@ -62,15 +62,9 @@
     // This will import all SVGs in src/assets as modules
     const svgModules = import.meta.glob('../assets/*.svg', { eager: true, import: 'default' });
     
-    console.log(svgModules);
-
     // Helper to get the asset by filename (e.g., 'sdu-ss-logo.svg')
     const getAssetUrl = (filename) => {
-        console.log(filename);
-    // Remove any leading path, just use the filename
-    console.log(svgModules[`${filename}`]);
-    return svgModules[`${filename}`];
-    
+        return svgModules[`${filename}`];
     };
 
     const trustedPartners = [
