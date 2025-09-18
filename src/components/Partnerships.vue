@@ -60,19 +60,24 @@
     import ScatteredBackground from './ScatterBackground.vue';
 
     // This will import all SVGs in src/assets as modules
-    const svgModules = import.meta.glob('@/assets/*.svg', { eager: true, import: 'default' });
+    const svgModules = import.meta.glob('../assets/*.svg', { eager: true, import: 'default' });
+    
+    console.log(svgModules);
 
     // Helper to get the asset by filename (e.g., 'sdu-ss-logo.svg')
     const getAssetUrl = (filename) => {
+        console.log(filename);
     // Remove any leading path, just use the filename
-    return svgModules[`/src/assets/${filename}`];
+    console.log(svgModules[`${filename}`]);
+    return svgModules[`${filename}`];
+    
     };
 
     const trustedPartners = [
         {
             id: 1,
             name: "SDU",
-            logo: getAssetUrl('sdu-ss-logo.svg'),
+            logo: getAssetUrl('../assets/sdu-ss-logo.svg'),
             alt: "SDU Logo",
             url: "https://sdu.dk",
             external: true
@@ -80,7 +85,7 @@
         {
             id: 2,
             name: "Partner 2",
-            logo: getAssetUrl('sdu-ss-logo.svg'),
+            logo: getAssetUrl('../assets/sdu-ss-logo.svg'),
             alt: "Partner 2 Logo", 
             url: "https://partner2.com",
             external: true
@@ -88,7 +93,7 @@
         {
             id: 3,
             name: "Partner 3",
-            logo: getAssetUrl('sdu-ss-logo.svg'),
+            logo: getAssetUrl('../assets/sdu-ss-logo.svg'),
             alt: "Partner 3 Logo",
             url: "https://partner3.com", 
             external: true
@@ -96,7 +101,7 @@
         {
             id: 4,
             name: "Partner 4",
-            logo: getAssetUrl('sdu-ss-logo.svg'),
+            logo: getAssetUrl('../assets/sdu-ss-logo.svg'),
             alt: "Partner 4 Logo",
             url: "https://partner4.com",
             external: true

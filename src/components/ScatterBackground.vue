@@ -28,7 +28,7 @@
 import { ref, onMounted } from 'vue'
 
 // This will import all SVGs in src/assets as modules
-const svgModules = import.meta.glob('@/assets/*.svg', { eager: true, import: 'default' });
+const svgModules = import.meta.glob('../assets/*.svg', { eager: true, import: 'default' });
 
 // Helper to get the asset by filename (e.g., 'sdu-ss-logo.svg')
 const getAssetUrl = (filename) => {
