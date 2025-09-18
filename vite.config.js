@@ -9,7 +9,7 @@ export default defineConfig({
     vue(),
     tailwindcss()
   ],
-  base: '/',
+  base: '/kanelkaos/',
   build: {
     outDir: 'dist',
     assetsDir: 'assets'
