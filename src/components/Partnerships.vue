@@ -1,6 +1,6 @@
 <template>
     <ScatteredBackground 
-            image-path="../assets/star.svg"
+            image-path="star.svg"
             :count="20"
             opacity="opacity-20"
             container-class="py-20 bg-kk-green overflow-hidden"
@@ -59,15 +59,20 @@
     import Card from './Card.vue';
     import ScatteredBackground from './ScatterBackground.vue';
 
-    const getAssetUrl = (path) => {
-        return new URL(path, import.meta.url).href
-    }
+    // This will import all SVGs in src/assets as modules
+    const svgModules = import.meta.glob('@/assets/*.svg', { eager: true, import: 'default' });
+
+    // Helper to get the asset by filename (e.g., 'sdu-ss-logo.svg')
+    const getAssetUrl = (filename) => {
+    // Remove any leading path, just use the filename
+    return svgModules[`/src/assets/${filename}`];
+    };
 
     const trustedPartners = [
         {
             id: 1,
             name: "SDU",
-            logo: getAssetUrl('../assets/sdu-ss-logo.svg'),
+            logo: getAssetUrl('sdu-ss-logo.svg'),
             alt: "SDU Logo",
             url: "https://sdu.dk",
             external: true
@@ -75,7 +80,7 @@
         {
             id: 2,
             name: "Partner 2",
-            logo: getAssetUrl('../assets/sdu-ss-logo.svg'),
+            logo: getAssetUrl('sdu-ss-logo.svg'),
             alt: "Partner 2 Logo", 
             url: "https://partner2.com",
             external: true
@@ -83,7 +88,7 @@
         {
             id: 3,
             name: "Partner 3",
-            logo: getAssetUrl('../assets/sdu-ss-logo.svg'),
+            logo: getAssetUrl('sdu-ss-logo.svg'),
             alt: "Partner 3 Logo",
             url: "https://partner3.com", 
             external: true
@@ -91,7 +96,7 @@
         {
             id: 4,
             name: "Partner 4",
-            logo: getAssetUrl('../assets/sdu-ss-logo.svg'),
+            logo: getAssetUrl('sdu-ss-logo.svg'),
             alt: "Partner 4 Logo",
             url: "https://partner4.com",
             external: true

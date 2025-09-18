@@ -31,7 +31,7 @@ const year = new Date().getFullYear();
       <!--<Separator color="#F4F0D7"/>-->
   
          <ScatteredBackground 
-            image-path="../assets/single-cinnamon-stick.svg"
+            image-path="single-cinnamon-stick.svg"
             :count="10"
             opacity="opacity-20"
             container-class="py-20 bg-kk-beige overflow-hidden"

@@ -27,9 +27,14 @@
 <script setup>
 import { ref, onMounted } from 'vue'
 
-const getAssetUrl = (path) => {
-    return new URL(path, import.meta.url).href
-}
+// This will import all SVGs in src/assets as modules
+const svgModules = import.meta.glob('@/assets/*.svg', { eager: true, import: 'default' });
+
+// Helper to get the asset by filename (e.g., 'sdu-ss-logo.svg')
+const getAssetUrl = (filename) => {
+// Remove any leading path, just use the filename
+return svgModules[`/src/assets/${filename}`];
+};
 
 // Props with defaults
 const props = defineProps({
