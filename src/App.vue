@@ -34,7 +34,7 @@ const year = new Date().getFullYear();
             image-path="../assets/single-cinnamon-stick.svg"
             :count="10"
             opacity="opacity-20"
-            container-class="py-20 bg-kk-beige overflow-hidden"
+            container-class="bg-kk-beige overflow-hidden"
             alt-text="cinnamon stick decoration"
         >
             <section class=" p-4 text-left pb-[40px] text-gray-700"  id="booking">

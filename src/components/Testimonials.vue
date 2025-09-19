@@ -48,19 +48,19 @@
 
 const testimonials = [
     {
-        name: "Wouter H.",
+        name: "Wouter A.",
         bgClass: "bg-kk-grey",
         text: "Godverdomme man, that was crazy. The cannon went off and the cinnamon went everywhere. Couldn't stop laughing and coughing. Total chaos, but a sick memory!",
         rating: 5
     },
     {
-        name: "Øyvind P.",
+        name: "Øyvind N.",
         bgClass: "bg-blue-400",
         text: "Got one of these as a gift and it totally saved the day. So easy to use and everyone got a good laugh. I'll just bring earplugs next time haha!",
         rating: 4
     },
     {
-        name: "Natasha V.",
+        name: "Ida V.",
         bgClass: "bg-orange-800",
         text: "We bought this for our friend's 25th and it was a huge hit. None expected us to do something else than a classic powder throwing... And the video we got is hilarious!",
         rating: 4.5
