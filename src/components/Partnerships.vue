@@ -3,7 +3,7 @@
             image-path="../assets/star.svg"
             :count="20"
             opacity="opacity-20"
-            container-class="py-20 bg-kk-green overflow-hidden"
+            container-class="bg-kk-green overflow-hidden"
             alt-text="star decoration"
         >
             <section class="flex flex-col items-center py-16 px-4  text-white">
