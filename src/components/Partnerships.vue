@@ -75,7 +75,7 @@
             alt: "SDU Logo",
             url: "https://sdu.dk",
             external: true
-        },
+        }/*,
         {
             id: 2,
             name: "Partner 2",
@@ -99,7 +99,7 @@
             alt: "Partner 4 Logo",
             url: "https://partner4.com",
             external: true
-        }
+        }*/
     ];
 
     const cards = [
@@ -117,7 +117,7 @@
         },
         {
             title: "Join the Kanelkaos Revolution",
-            description: "Selling Kanelkaos is more than just stocking a product; it's about being part of the next big tradition. We make it easy to get started and stand out.",
+            description: "Selling Kanelkaos is more than just stocking a produc. It's about being part of the next big tradition. We make it easy to get started and stand out.",
             alt: "Clapping Hands Icon",
             icon: "hands-clapping",
         }

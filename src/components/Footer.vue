@@ -11,7 +11,7 @@
             <small class="font-semibold text-gray-400">
               Campusvej 1, 5230 Odense M<br>
               <!--CVR: XXXXXX<br>-->
-              kanelkaos@gmail.com
+              <a href="mailto:kanelkaos@gmail.com">kanelkaos@gmail.com</a>
             </small>
           </div>
       </div>
