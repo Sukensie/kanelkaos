@@ -19,10 +19,10 @@ const year = new Date().getFullYear();
     <main class="text-center flex flex-col w-full">
       <Hero />  
 
-    <Partnerships />
+      <Partnerships />
 
 
-    <Testimonials />
+      <Testimonials />
 
 
 
